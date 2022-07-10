@@ -1,0 +1,21 @@
+.workout-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.workout-title{
+    text-align: center;
+    color: olivedrab;
+}
+
+/* Responsinve  for use to media query */
+@media only screen and (max-width: 576px) {
+    .workout-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media only screen and (min-width:577px ) and (max-width:992px) {
+    .workout-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

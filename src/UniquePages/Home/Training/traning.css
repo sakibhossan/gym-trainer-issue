@@ -2,3 +2,6 @@
     height:400px;
     width: 400px;
 }
+.trainer-container{
+    border: 1px solid lightgray;
+}
