@@ -6,6 +6,8 @@ import Header from './UniquePages/Shared/Header/Header';
 import Footer from './UniquePages/Shared/Footer/Footer';
 import WorkOutDetail from './UniquePages/WorkOutDetail/WorkOutDetail';
 import NotFound from './UniquePages/Shared/NotFound/NotFound';
+import Login from './UniquePages/Login/Login/Login';
+import Register from './UniquePages/Login/Register/Register';
 
 
 function App() {
@@ -18,7 +20,10 @@ function App() {
     <Route path='/home' element={<Home></Home>}></Route>
     <Route path='/workout/:workoutId' element={<WorkOutDetail></WorkOutDetail>}></Route>
     <Route path='/about' element={<About></About>}></Route>
+    <Route path='/login' element={<Login></Login>}></Route>
+    <Route path='/register' element={<Register></Register>}></Route>
     <Route path='*' element={<NotFound></NotFound>}></Route>
+    
     
     </Routes>
     <Footer></Footer>
