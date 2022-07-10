@@ -17,7 +17,7 @@ useEffect(() =>{
 
 
     return (
-        <div className='container'>
+        <div id="workout" className='container'>
        <div className="row">
        <h2 className='workout-title mt-5'>Our Euipment:</h2>
          <div className='workout-container'>

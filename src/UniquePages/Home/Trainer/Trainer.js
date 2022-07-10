@@ -3,7 +3,7 @@ import React from 'react';
 const Trainer = ({ trainer }) => {
     const { name, img } = trainer;
     return (
-        <div className='g-5  col-sm-12 col-md-6 col-lg-4'>
+        <div id="trainer" className='g-5 col-sm-12 col-md-6 col-lg-4'>
     <div className="row">
     <div className="card " style={{ width:"18rem" }}>
              <img src={img} className="card-img-top" alt="..."/>
