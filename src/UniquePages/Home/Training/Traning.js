@@ -9,9 +9,9 @@ const Traning = ({ trainer }) => {
 
           <div className='ps-5'>
           <h2>{name}</h2>
-            <p>Price:{price}</p>
+            <p>Monthly Price:{price}</p>
             <p><small>{description}</small></p>
-            <button className='btn btn-dark text-align-center '>Book:{name}</button>
+            <button className='btn btn-dark text-align-center '>Add To Cart</button>
           </div>
         </div>
 
