@@ -17,8 +17,9 @@ useEffect(() =>{
 
 
     return (
-        <div>
-            <h2 className='workout-title mt-5'>Our Euipment:</h2>
+        <div className='container'>
+       <div className="row">
+       <h2 className='workout-title mt-5'>Our Euipment:</h2>
          <div className='workout-container'>
          {
                 equipment.map(trainer => <Traning 
@@ -27,6 +28,7 @@ useEffect(() =>{
                 ></Traning>)
             }
          </div>
+       </div>
         </div>
     );
 };
