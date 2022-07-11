@@ -10,11 +10,11 @@ const Register = () => {
     const [terms, setTerms] = useState(false);
     const [
         createUserWithEmailAndPassword,
-        user,
+        
         loading,
-        error,
+        
       ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
-      const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+      const [updateProfile, updating] = useUpdateProfile(auth);
     const navigate = useNavigate();
 
 const navigateLogin= () =>{
@@ -32,7 +32,7 @@ const handleRegister = async (event)  =>{
     const name = event.target.name.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
-    // const agree = event.target.terms.checked;
+    
    
      await  createUserWithEmailAndPassword(email, password);
      await updateProfile({ displayName: name });
