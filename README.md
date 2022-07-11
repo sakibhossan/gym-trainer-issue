@@ -5,6 +5,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+### `bulet point`
+1.my project is service route click then show service components
+2.single service in Add To Cart btn click then show protected route system
+if user login  then show already protectes route if user not login then not show protected route
+3.not reload any route
+4.navbar sticky top
+5.simple footer use
+6.verified your email
+7.reset password system
 
 ### `npm start`
 
