@@ -10,7 +10,7 @@ const Traning = ({ trainer }) => {
 
     }
     return (
-        <div className='trainer-container'>
+        <div className='trainer-container '>
             <img className='w-100' src={img} alt="" />
 
           <div className='ps-5'>
