@@ -1,22 +1,24 @@
 import React from 'react';
 import google from '../../../../Images/Trainer/google.png';
 import github from '../../../../Images/Trainer/github.png';
-import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
+    
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
 const navigate =useNavigate();
 let errorElement;
-    if (error) {
-        errorElement = <div>
+    if (error || error1) {
+        errorElement =  <p className='text-danger'>Error: {error?.message} {error1?.message}</p>
            
-                <p className='text-danger'>Error: {error.message}</p>
-            </div>
+              
+            
         
     }
-    if(user){
+    if(user || user1){
         navigate('/home');
     }
     return (
@@ -36,6 +38,7 @@ let errorElement;
                     <span className='px-3'> Google Sign In</span>
                 </button>
                 <button 
+                onClick={() =>signInWithGithub() }
                 className=' rounded-pill d-block mx-auto my-3'>
                     <img src={github} alt="" />
                     <span className='px-4'> Github Sign In</span>
